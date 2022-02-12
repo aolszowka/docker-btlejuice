@@ -9,5 +9,8 @@ docker build . --tag btlejuice:latest
 
 To run the container:
 ```
-docker run --network=host -e BTLEJUICE_ProxyAddress=IP.Address.In.Here btlejuice
+docker run \
+       --network=host \
+       -e BTLEJUICE_ProxyAddress=IP.Address.In.Here \
+       btlejuice
 ```
