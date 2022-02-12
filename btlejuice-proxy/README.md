@@ -11,5 +11,8 @@ docker build . --tag btlejuice-proxy:latest
 
 To run the container:
 ```
-docker run -d --network=host btlejuice-proxy
+docker run -d \
+      --network=host \
+      -e  BTLEJUICE_iface=<Optional Default is hci0> \
+      btlejuice-proxy
 ```

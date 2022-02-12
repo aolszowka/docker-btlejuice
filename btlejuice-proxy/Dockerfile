@@ -16,4 +16,6 @@ RUN apt-get -qq install python && \
 
 EXPOSE 8000
 
-ENTRYPOINT ["btlejuice-proxy"]
+ENV BTLEJUICE_iface hci0
+
+ENTRYPOINT btlejuice-proxy --iface BTLEJUICE_iface
