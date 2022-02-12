@@ -11,4 +11,4 @@ RUN npm install -g btlejuice --unsafe-perm
 
 EXPOSE 8080
 
-ENTRYPOINT btlejuice -u $BTLJUICE_ProxyAddress -w
+ENTRYPOINT btlejuice -u $BTLEJUICE_ProxyAddress -w
